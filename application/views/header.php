@@ -287,12 +287,17 @@
                                     </a>
                                 </li>
 
-                            
+                                <li>
+                                    <a href="<?php echo site_url(); ?>/reportes/ideologia"
+                                        class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-user"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext"
+                                            data-i18n="nav.form-components.main">Idiología</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
                             </ul>
                             
-
-                            
-
 
                         </div>
                     </nav>
