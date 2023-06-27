@@ -59,6 +59,43 @@
             }
             
         }
+
+        //funcion rendirizar vista editar 
+    public function editar($id_asp)
+    {
+        $data["aspiranteEditar"] = $this->Aspirante->obtenerPorId($id_asp);
+        $this->load->view('header');
+        $this->load->view('aspirantes/editar', $data);
+        $this->load->view('footer');
+    }
+
+
+
+    //Proceso de actualizacion 
+
+    public function procesarActualizacion()
+    {
+
+        $datosEditados = array(
+            "dignidad_asp" => $this->input->post('dignidad_asp'),
+            "cedula_asp" => $this->input->post('cedula_asp'),
+            "apellidos_asp" => $this->input->post('apellidos_asp'),
+            "nombres_asp" => $this->input->post('nombres_asp'),
+            "titulo_asp" => $this->input->post('titulo_asp'),
+            "movimiento_asp" => $this->input->post('movimiento_asp'),
+            "tipo_asp" => $this->input->post('tipo_asp'),
+        );
+
+        $id_asp = $this->input->post('id_asp');
+
+        if ($this->Aspirante->actualizar($id_asp, $datosEditados)) {
+            redirect("aspirantes/listado");
+        } else {
+            echo "<h1> Error al actualizar</h1>";
+        }
+        
+
+    }
     }//Cierre d ela clase<
 
 ?>

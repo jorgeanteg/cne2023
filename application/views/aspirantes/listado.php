@@ -70,7 +70,7 @@
                                                     <?php echo $filaTemporal->tipo_asp; ?>
                                                 </td>
                                                 <td class="text-center">
-                                                    <a href="#" title="Editar Aspirante" style="color:blue;">
+                                                    <a href="<?php echo site_url(); ?>/aspirantes/editar/<?php echo $filaTemporal->id_asp; ?>" title="Editar Aspirante" style="color:blue;">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </a>
                                                     &nbsp;&nbsp;&nbsp;

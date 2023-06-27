@@ -39,7 +39,26 @@ class Aspirante extends CI_Model
         // return $this->db->delete("instructor");
     }
 
-    
+    function obtenerPorId($id_asp)
+    {
+        $this->db->where("id_asp", $id_asp);
+
+        $aspirante = $this->db->get("aspirantes");
+        
+        if ($aspirante->num_rows() > 0) {
+            return $aspirante->row();
+        }
+        return false;
+    }
+
+
+
+    function actualizar($id_asp, $datos)
+    {
+        $this->db->where("id_asp", $id_asp);
+        return $this->db->update('aspirantes', $datos);
+
+    }
 
 
 } //cierre de la clase
