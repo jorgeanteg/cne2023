@@ -3,20 +3,6 @@
 </div>
 </div>
 
-<?php if ($this->session->flashdata("confirmacion")): ?>
-  <script type="text/javascript">
-    toastr.success("<?php echo $this->session->flashdata("confirmacion"); ?>",'',{"positionClass":"toast-bottom-right"});
-  </script>
-  <?php   $this->session->set_flashdata("confirmacion","") ?>
-<?php endif; ?>
-
-<?php if ($this->session->flashdata("error")): ?>
-  <script type="text/javascript">
-    toastr.error("<?php echo $this->session->flashdata("error"); ?>");
-  </script>
-  <?php   $this->session->set_flashdata("error","") ?>
-<?php endif; ?>
-
 
 <!-- Required Jquery -->
 <script type="text/javascript" src="<?php echo base_url(); ?>/plantilla/assets/js/jquery/jquery.min.js"></script>

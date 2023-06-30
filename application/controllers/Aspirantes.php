@@ -43,24 +43,24 @@
             //llamamos a insertar
 
             if($this->Aspirante->insertar($datosNuevoAspirante)){
-                $this->session->set_flashdata("confirmacion", "Aspirante guardado exitosamente");
+                redirect('aspirantes/listado');
                 
             }else{
-                $this->session->set_flashdata("errorInstructor", "Error al guardar. Intente de nuevo.");
+                
             }
-            redirect('aspirantes/listado');
+            
         }
 
         public function eliminar($id_asp){
             if ($this->Aspirante->borrar($id_asp)) {
-                $this->session->set_flashdata("confirmacion", "Aspirante eliminado exitosamente");
                 
+                redirect('aspirantes/listado');
                 # code...
             } else {
                 # code...
-                $this->session->set_flashdata("errorInstructor", "Error al eliminar. Intente de nuevo.");
+                
             }
-            redirect('aspirantes/listado');
+            
         }
 
         //funcion rendirizar vista editar 
@@ -92,12 +92,12 @@
         $id_asp = $this->input->post('id_asp');
 
         if ($this->Aspirante->actualizar($id_asp, $datosEditados)) {
-            $this->session->set_flashdata("confirmacion", "Aspirante actualizado exitosamente");
+            redirect("aspirantes/listado");
             
         } else {
-            $this->session->set_flashdata("errorInstructor", "Error al actualizar. Intente de nuevo.");
+            
         }
-        redirect("aspirantes/listado");
+        
 
     }
     }//Cierre d ela clase<
