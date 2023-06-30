@@ -35,7 +35,7 @@
                                     <label for="">Cédula:</label>
                                     <br>
                                     <input type="number" placeholder="Ingrese la cédula" class="form-control"
-                                        name="cedula_asp" value="" id="cedula_asp">
+                                        name="cedula_asp" value="" id="cedula_asp" required>
                                 </div>
                             </div>
                             <br>
@@ -44,13 +44,13 @@
                                     <label for="">Apellidos:</label>
                                     <br>
                                     <input type="text" placeholder="Ingrese sus apellidos" class="form-control"
-                                        name="apellidos_asp" value="" id="apellidos_asp">
+                                        name="apellidos_asp" value="" id="apellidos_asp" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="">Nombres:</label>
                                     <br>
                                     <input type="text" placeholder="Ingrese los nombres" class="form-control"
-                                        name="nombres_asp" value="" id="nombres_asp">
+                                        name="nombres_asp" value="" id="nombres_asp" required>
                                 </div>
                             </div>
                             <br>
@@ -60,13 +60,13 @@
                                     <label for="">Título:</label>
                                     <br>
                                     <input type="text" placeholder="Ingrese el titulo" class="form-control"
-                                        name="titulo_asp" value="" id="titulo_asp">
+                                        name="titulo_asp" value="" id="titulo_asp" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="">Movimiento:</label>
                                     <br>
 
-                                    <select class="form-select" type="text" name="movimiento_asp" id="movimiento_asp">
+                                    <select required class="form-select" type="text" name="movimiento_asp" id="movimiento_asp">
                                         <option selected disabled>Selecione un movimiento político</option>
                                         <option value="Movimiento Centro Democrático Nacional">Movimiento Centro
                                             Democrático Nacional (CD), lista 1.</option>
@@ -154,7 +154,7 @@
                                     </button>
                                     &nbsp;
                                     <a href="<?php echo site_url(); ?>/aspirantes/listado" class="btn btn-danger">
-                                        Cancelar
+                                        Cancelarz
                                     </a>
                                 </div>
                             </div>

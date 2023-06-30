@@ -12,7 +12,7 @@
                 <label for="">Dignidad:</label>
                 <br>
 
-                <select class="form-select" type="text" name="dignidad_asp" id="dignidad_asp">
+                <select class="form-select" type="text" name="dignidad_asp" id="dignidad_asp" required>
                     <option selected value="<?php echo $aspiranteEditar->dignidad_asp; ?>"><?php echo $aspiranteEditar->dignidad_asp; ?></option>
                     <option value="Presidente">Presidente</option>
                     <option value="Asambleísta Nacional">Asambleísta Nacional</option>
@@ -24,7 +24,7 @@
                 <label for="">Cédula:</label>
                 <br>
                 <input type="number" placeholder="Ingrese la cédula" class="form-control" name="cedula_asp"
-                    value="<?php echo $aspiranteEditar->cedula_asp; ?>" id="cedula_asp">
+                    value="<?php echo $aspiranteEditar->cedula_asp; ?>" id="cedula_asp" required>
             </div>
         </div>
         <br>
@@ -33,13 +33,13 @@
                 <label for="">Apellidos:</label>
                 <br>
                 <input type="text" placeholder="Ingrese sus apellidos" class="form-control" name="apellidos_asp"
-                    value="<?php echo $aspiranteEditar->apellidos_asp; ?>" id="apellidos_asp">
+                    value="<?php echo $aspiranteEditar->apellidos_asp; ?>" id="apellidos_asp" required>
             </div>
             <div class="col-md-6">
                 <label for="">Nombres:</label>
                 <br>
                 <input type="text" placeholder="Ingrese los nombres" class="form-control" name="nombres_asp"
-                    value="<?php echo $aspiranteEditar->nombres_asp; ?>" id="nombres_asp">
+                    value="<?php echo $aspiranteEditar->nombres_asp; ?>" id="nombres_asp" required>
             </div>
         </div>
         <br>
@@ -48,13 +48,13 @@
                 <label for="">Título:</label>
                 <br>
                 <input type="text" placeholder="Ingrese el titulo" class="form-control" name="titulo_asp"
-                    value="<?php echo $aspiranteEditar->titulo_asp; ?>" id="titulo_asp">
+                    value="<?php echo $aspiranteEditar->titulo_asp; ?>" id="titulo_asp" required>
             </div>
             <div class="col-md-6">
                 <label for="">Movimiento:</label>
                 <br>
 
-                <select class="form-select" type="text" name="movimiento_asp" id="movimiento_asp">
+                <select class="form-select" type="text" name="movimiento_asp" id="movimiento_asp" required>
                     <option selected value="<?php echo $aspiranteEditar->movimiento_asp; ?>">"<?php echo $aspiranteEditar->movimiento_asp; ?>"</option>
                     <option value="Movimiento Centro Democrático Nacional">Movimiento Centro
                         Democrático Nacional (CD), lista 1.</option>
